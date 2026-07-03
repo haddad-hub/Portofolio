@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Bonjek Kurir preview">
+  <rect width="960" height="600" fill="#24202a"/>
+  <rect x="88" y="82" width="784" height="436" rx="20" fill="#fff8fc"/>
+  <rect x="124" y="124" width="188" height="352" rx="18" fill="#ffe2f0"/>
+  <rect x="152" y="158" width="92" height="92" rx="24" fill="#DE1D7A"/>
+  <path d="M160 298h124" stroke="#DE1D7A" stroke-width="22" stroke-linecap="round"/>
+  <path d="M160 348h94" stroke="#7d6675" stroke-width="16" stroke-linecap="round" opacity=".55"/>
+  <rect x="364" y="130" width="356" height="42" rx="13" fill="#24202a"/>
+  <rect x="364" y="212" width="390" height="96" rx="18" fill="#ffffff" stroke="#f2c9dc" stroke-width="4"/>
+  <rect x="392" y="240" width="168" height="20" rx="10" fill="#DE1D7A"/>
+  <rect x="392" y="274" width="238" height="16" rx="8" fill="#7d6675" opacity=".5"/>
+  <rect x="364" y="336" width="390" height="96" rx="18" fill="#ffffff" stroke="#f2c9dc" stroke-width="4"/>
+  <circle cx="810" cy="396" r="38" fill="#16a34a"/>
+  <path d="M792 396l13 13 25-28" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

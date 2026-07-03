@@ -1,0 +1,134 @@
+{
+  "name": "Haddad asriansyah",
+  "role": "IT engginer",
+  "location": "Indonesia",
+  "email": "ezethaddad@gmail.com",
+  "phone": "+62 852-4730-1052",
+  "availability": "Open for freelance and full-time work",
+  "summary": "Saya membangun aplikasi web operasional seperti dashboard analytics, aplikasi pelanggan, aplikasi kurir, dan tools interaktif berbasis HTML, CSS, JavaScript, Tailwind, Chart.js, serta localStorage.",
+  "links": {
+    "github": "#",
+    "linkedin": "#",
+    "instagram": "#",
+    "resume": "#"
+  },
+  "stats": [
+    {
+      "label": "Projects",
+      "value": "5+"
+    },
+    {
+      "label": "Focus",
+      "value": "Web App"
+    },
+    {
+      "label": "Stack",
+      "value": "JS"
+    }
+  ],
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Tailwind CSS",
+    "Chart.js",
+    "LocalStorage",
+    "Responsive UI",
+    "C++"
+  ],
+  "services": [
+    {
+      "title": "Dashboard Analytics",
+      "description": "Membuat dashboard visual untuk membaca order, kurir, histori, keuangan, dan statistik operasional."
+    },
+    {
+      "title": "Web App Operasional",
+      "description": "Membangun aplikasi pelanggan dan kurir dengan alur input, status order, profil, histori, dan penyimpanan lokal."
+    },
+    {
+      "title": "Frontend Interface",
+      "description": "Merancang tampilan responsif dengan navigasi, tema, kartu data, form, tabel, dan chart yang nyaman dipakai."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Bonjek Pelanggan",
+      "category": "Customer Web App",
+      "description": "Aplikasi pelanggan Bonjek untuk membuat pesanan makanan/minuman, menyimpan profil, melihat status, dan histori pesanan.",
+      "image": "assets/project-bonjek-customer.svg",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "LocalStorage"
+      ],
+      "demo": "projects/bonjek/app pelanggan bonjek.html",
+      "source": "#"
+    },
+    {
+      "title": "Bonjek Kurir",
+      "category": "Courier Web App",
+      "description": "Aplikasi kurir untuk menerima order masuk, mengelola pengantaran, menyelesaikan transaksi, dan menyimpan profil kurir.",
+      "image": "assets/project-bonjek-courier.svg",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "LocalStorage"
+      ],
+      "demo": "projects/bonjek/app kurir bonjek.html",
+      "source": "#"
+    },
+    {
+      "title": "Bonjek Analytics Dashboard",
+      "category": "Operations Dashboard",
+      "description": "Dashboard analytics untuk memantau order, performa kurir, histori, keuangan, grafik, filter tanggal, dan ranking kurir.",
+      "image": "assets/project-bonjek-dashboard.svg",
+      "tags": [
+        "Tailwind",
+        "Chart.js",
+        "Dashboard"
+      ],
+      "demo": "projects/bonjek/dashboard bonjek analytics.html",
+      "source": "#"
+    },
+    {
+      "title": "MyDash Personal Dashboard",
+      "category": "Personal Productivity",
+      "description": "Dashboard pribadi dengan tema, statistik, todo, chart, dan layout produktivitas untuk mengatur aktivitas harian.",
+      "image": "assets/project-mydash.svg",
+      "tags": [
+        "Tailwind",
+        "Chart.js",
+        "UI Design"
+      ],
+      "demo": "projects/bonjek/dashboard pribadi.html",
+      "source": "#"
+    },
+    {
+      "title": "Kalkulator Sederhana",
+      "category": "Utility Tool",
+      "description": "Kalkulator web ringan dengan tampilan responsif, display ekspresi, dan tombol operasi dasar.",
+      "image": "assets/project-calculator.svg",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "demo": "projects/bonjek/kalkulator-sederhana.html",
+      "source": "#"
+    }
+  ],
+  "experience": [
+    {
+      "period": "2026",
+      "title": "Bonjek Web App Ecosystem",
+      "description": "Membangun rangkaian aplikasi Bonjek: pelanggan, kurir, dashboard analytics, shared logic, dan tampilan responsif."
+    },
+    {
+      "period": "2026",
+      "title": "Personal Dashboard & Web Tools",
+      "description": "Membuat dashboard pribadi dan tools sederhana berbasis web untuk latihan UI, chart, state, dan interaksi browser."
+    }
+  ]
+}

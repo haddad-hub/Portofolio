@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portofolio personal web developer.">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Haddad asriansyah | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260703-4">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" data-profile="name">Portfolio</a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="#projects">Project</a>
+        <a href="#services">Layanan</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-content">
+          <p class="eyebrow" data-profile="availability">Open for work</p>
+          <h1><span data-profile="name">Haddad asriansyah</span><br><strong data-profile="role">IT engginer</strong></h1>
+          <p class="hero-summary" data-profile="summary">Memuat profil...</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Lihat Project</a>
+            <a class="button secondary" href="#contact">Hubungi Saya</a>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="Ringkasan profil">
+          <div class="avatar" aria-hidden="true">HA</div>
+          <div>
+            <p class="panel-name" data-profile="name">Haddad asriansyah</p>
+            <p class="panel-role" data-profile="location">Indonesia</p>
+          </div>
+          <div class="stats" id="stats"></div>
+        </aside>
+      </section>
+
+      <section class="section skills-strip" aria-label="Keahlian">
+        <div id="skills" class="skills"></div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Project terbaru</h2>
+        </div>
+        <div id="projectsGrid" class="projects-grid"></div>
+      </section>
+
+      <section id="services" class="section split-section">
+        <div class="section-heading">
+          <p class="eyebrow">What I do</p>
+          <h2>Layanan yang bisa saya bantu</h2>
+        </div>
+        <div id="servicesGrid" class="services-grid"></div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Track record</p>
+          <h2>Pengalaman</h2>
+        </div>
+        <div id="experienceList" class="timeline"></div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Mari diskusikan project kamu.</h2>
+          <p>Kirim pesan lewat form ini untuk membuka WhatsApp, atau hubungi langsung lewat email dan nomor HP.</p>
+          <div class="contact-links">
+            <a id="emailLink" href="mailto:ezethaddad@gmail.com">ezethaddad@gmail.com</a>
+            <a id="phoneLink" href="tel:+6285247301052">+62 852-4730-1052</a>
+            <a id="whatsappLink" href="https://wa.me/6285247301052" target="_blank" rel="noreferrer">WhatsApp +62 852-4730-1052</a>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <label>
+            Nama
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            Subjek
+            <input name="subject" type="text" required>
+          </label>
+          <label>
+            Pesan
+            <textarea name="message" rows="5" minlength="10" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Kirim via WhatsApp</button>
+          <p id="formStatus" class="form-status" role="status"></p>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="assets/Mikoto-urabe-pfp.jpg" alt="Logo portfolio" class="footer-logo">
+        <div>
+          <p class="footer-name" data-profile="name">Haddad asriansyah</p>
+          <p class="footer-note">IT engginer dari Indonesia</p>
+        </div>
+      </div>
+      <div class="footer-links" id="footerLinks"></div>
+      <p class="footer-copy">&copy; <span id="year"></span> <span data-profile="name">Haddad asriansyah</span>. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js?v=20260703-4" defer></script>
+  </body>
+</html>

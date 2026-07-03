@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Bonjek Analytics Dashboard preview">
+  <rect width="960" height="600" fill="#fff1f7"/>
+  <rect x="74" y="70" width="812" height="460" rx="20" fill="#ffffff" stroke="#f2c9dc" stroke-width="4"/>
+  <rect x="74" y="70" width="216" height="460" rx="20" fill="#fff8fc"/>
+  <rect x="120" y="128" width="112" height="24" rx="12" fill="#DE1D7A"/>
+  <rect x="120" y="204" width="128" height="18" rx="9" fill="#DE1D7A" opacity=".75"/>
+  <rect x="120" y="246" width="98" height="18" rx="9" fill="#7d6675" opacity=".55"/>
+  <rect x="334" y="118" width="136" height="102" rx="16" fill="#ffe2f0"/>
+  <rect x="498" y="118" width="136" height="102" rx="16" fill="#ffe2f0"/>
+  <rect x="662" y="118" width="136" height="102" rx="16" fill="#ffe2f0"/>
+  <polyline points="348 402 436 338 514 362 606 282 730 318 810 250" fill="none" stroke="#DE1D7A" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="334" y="260" width="500" height="198" rx="18" fill="none" stroke="#f2c9dc" stroke-width="4"/>
+</svg>

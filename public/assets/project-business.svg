@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Business landing page preview">
+  <rect width="960" height="600" fill="#ede8df"/>
+  <rect x="84" y="80" width="792" height="440" rx="18" fill="#ffffff"/>
+  <rect x="130" y="130" width="180" height="28" rx="14" fill="#c95f5f"/>
+  <rect x="130" y="198" width="360" height="52" rx="10" fill="#17212b"/>
+  <rect x="130" y="274" width="430" height="22" rx="11" fill="#66717f"/>
+  <rect x="130" y="314" width="300" height="22" rx="11" fill="#ded8cb"/>
+  <rect x="130" y="404" width="164" height="58" rx="10" fill="#0f766e"/>
+  <rect x="620" y="134" width="182" height="292" rx="18" fill="#0f766e"/>
+  <rect x="586" y="176" width="182" height="292" rx="18" fill="#d39a2c" opacity=".92"/>
+  <circle cx="677" cy="260" r="54" fill="#ffffff"/>
+  <rect x="632" y="352" width="90" height="18" rx="9" fill="#ffffff"/>
+  <rect x="616" y="386" width="122" height="18" rx="9" fill="#ffffff" opacity=".72"/>
+</svg>

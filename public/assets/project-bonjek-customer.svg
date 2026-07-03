@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Bonjek Pelanggan preview">
+  <rect width="960" height="600" fill="#fff7fb"/>
+  <rect x="72" y="66" width="816" height="468" rx="20" fill="#ffffff" stroke="#f2c9dc" stroke-width="4"/>
+  <rect x="72" y="66" width="220" height="468" rx="20" fill="#fff0f7"/>
+  <circle cx="154" cy="148" r="42" fill="#DE1D7A"/>
+  <path d="M132 153h44l-12 20h-20z" fill="#fff"/>
+  <rect x="122" y="228" width="118" height="24" rx="12" fill="#DE1D7A" opacity=".9"/>
+  <rect x="122" y="276" width="96" height="18" rx="9" fill="#7d6675" opacity=".55"/>
+  <rect x="344" y="112" width="364" height="42" rx="12" fill="#24202a"/>
+  <rect x="344" y="178" width="256" height="22" rx="11" fill="#7d6675" opacity=".55"/>
+  <rect x="344" y="250" width="190" height="116" rx="18" fill="#ffe2f0"/>
+  <rect x="562" y="250" width="190" height="116" rx="18" fill="#ffe2f0"/>
+  <rect x="344" y="412" width="408" height="58" rx="16" fill="#DE1D7A"/>
+  <circle cx="804" cy="158" r="44" fill="#ff7ab8"/>
+  <path d="M782 160h44m-22-22v44" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
+</svg>
