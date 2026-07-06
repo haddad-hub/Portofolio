@@ -14,6 +14,7 @@ const fallbackProfile = {
     "github": "https://github.com/haddad-hub",
     "linkedin": "#",
     "instagram": "https://www.instagram.com/hadddadde?igsh=OXJsM2F3Mm9pbGZq",
+    "tiktok": "https://www.tiktok.com/@apersonalityy?is_from_webapp=1&sender_device=pc",
     "resume": "#"
   },
   "stats": [
@@ -168,6 +169,36 @@ function whatsappNumber(phone) {
   return phoneDigits(phone).replace(/^\+/, "");
 }
 
+const socialLinks = {
+  github: {
+    label: "GitHub",
+    handle: "haddad-hub",
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2.1a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.2-3.37-1.2-.45-1.15-1.1-1.46-1.1-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.35 1.08 2.92.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.48 9.48 0 0 1 12 6.98c.85 0 1.7.11 2.5.34 1.9-1.3 2.74-1.03 2.74-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.67c0 .27.18.58.69.48A10 10 0 0 0 12 2.1Z"/>
+      </svg>
+    `
+  },
+  instagram: {
+    label: "Instagram",
+    handle: "@hadddadde",
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7.8 2.8h8.4a5 5 0 0 1 5 5v8.4a5 5 0 0 1-5 5H7.8a5 5 0 0 1-5-5V7.8a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v8.4a3 3 0 0 0 3 3h8.4a3 3 0 0 0 3-3V7.8a3 3 0 0 0-3-3H7.8Zm4.2 3.6a3.6 3.6 0 1 1 0 7.2 3.6 3.6 0 0 1 0-7.2Zm0 2a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Zm4.65-2.35a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1Z"/>
+      </svg>
+    `
+  },
+  tiktok: {
+    label: "TikTok",
+    handle: "@apersonalityy",
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M14.2 3h2.35c.2 1.25.75 2.27 1.64 3.06.84.75 1.85 1.2 3.01 1.35v2.45a7.72 7.72 0 0 1-4.58-1.48v6.58c0 1.9-.62 3.38-1.85 4.44-1.08.93-2.43 1.4-4.05 1.4-1.72 0-3.12-.54-4.2-1.61a5.2 5.2 0 0 1-1.58-3.86c0-1.55.52-2.82 1.56-3.83 1.05-1.02 2.36-1.53 3.94-1.53.42 0 .8.04 1.16.13v2.58a3.29 3.29 0 0 0-1.1-.18c-.82 0-1.48.25-1.98.74-.5.48-.75 1.13-.75 1.95 0 .8.26 1.46.78 1.96.52.5 1.2.75 2.03.75.94 0 1.67-.3 2.18-.91.43-.52.64-1.22.64-2.1V3h.8Z"/>
+      </svg>
+    `
+  }
+};
+
 async function readJsonResponse(response) {
   const text = await response.text();
   const trimmed = text.trim();
@@ -218,11 +249,19 @@ function renderProfile(profile) {
   whatsappLink.href = `https://wa.me/${whatsappNumber(profile.phone)}`;
   whatsappLink.textContent = `WhatsApp ${profile.phone}`;
 
-  const footerLinks = Object.entries(profile.links || {})
-    .filter(([, href]) => href && href !== "#")
-    .map(([label, href]) => `<a href="${href}" target="_blank" rel="noreferrer">${label}</a>`)
+  const footerLinks = Object.entries(socialLinks)
+    .filter(([key]) => profile.links?.[key] && profile.links[key] !== "#")
+    .map(([key, item]) => `
+      <a class="social-link" href="${profile.links[key]}" target="_blank" rel="noreferrer">
+        <span class="social-icon">${item.icon}</span>
+        <span>
+          <strong>${item.label}</strong>
+          <small>${item.handle}</small>
+        </span>
+      </a>
+    `)
     .join("");
-  byId("footerLinks").innerHTML = footerLinks;
+  byId("footerLinks").innerHTML = `<p class="footer-links-title">Akun media sosial</p><div class="social-list">${footerLinks}</div>`;
 }
 
 function renderProject(project) {
