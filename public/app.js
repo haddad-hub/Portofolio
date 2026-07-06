@@ -13,7 +13,7 @@ const fallbackProfile = {
   "links": {
     "github": "https://github.com/haddad-hub",
     "linkedin": "#",
-    "instagram": "#",
+    "instagram": "https://www.instagram.com/hadddadde?igsh=OXJsM2F3Mm9pbGZq",
     "resume": "#"
   },
   "stats": [
