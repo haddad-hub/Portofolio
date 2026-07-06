@@ -153,7 +153,7 @@
           <label>
             Tujuan pesan
             <span class="select-wrap">
-              <select name="subject" required>
+              <select id="subjectSelect" name="subject" required>
                 <option value="" selected disabled>Pilih tujuan pesan</option>
                 <option value="Diskusi project baru">Diskusi project baru</option>
                 <option value="Kerja sama / freelance">Kerja sama / freelance</option>
@@ -162,6 +162,10 @@
                 <option value="Lainnya">Lainnya</option>
               </select>
             </span>
+          </label>
+          <label id="customSubjectField" class="custom-subject-field" hidden>
+            Tujuan atau request lainnya
+            <input name="customSubject" type="text" placeholder="Tulis tujuan pesan atau request kamu">
           </label>
           <label>
             Pesan

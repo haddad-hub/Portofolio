@@ -335,16 +335,32 @@ function setupNavigation() {
 function setupContactForm() {
   const form = byId("contactForm");
   const status = byId("formStatus");
+  const subjectSelect = byId("subjectSelect");
+  const customSubjectField = byId("customSubjectField");
+  const customSubjectInput = form.elements.customSubject;
+
+  function syncCustomSubject() {
+    const isCustom = subjectSelect.value === "Lainnya";
+    customSubjectField.hidden = !isCustom;
+    customSubjectInput.required = isCustom;
+    if (!isCustom) customSubjectInput.value = "";
+  }
+
+  subjectSelect.addEventListener("change", syncCustomSubject);
+  syncCustomSubject();
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const payload = Object.fromEntries(new FormData(form).entries());
+    const subject = payload.subject === "Lainnya" && payload.customSubject
+      ? `Lainnya - ${payload.customSubject}`
+      : payload.subject;
     const profile = state.profile || fallbackProfile;
     const message = [
       `Halo, saya ${payload.name}.`,
       `Email: ${payload.email}`,
-      `Subjek: ${payload.subject}`,
+      `Subjek: ${subject}`,
       "",
       payload.message
     ].join("\n");
@@ -353,6 +369,7 @@ function setupContactForm() {
     status.textContent = "Membuka WhatsApp untuk mengirim pesan...";
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     form.reset();
+    syncCustomSubject();
   });
 }
 
