@@ -814,9 +814,11 @@ h3 {
   align-items: start;
   gap: clamp(22px, 4vw, 54px);
   padding: 38px clamp(18px, 5vw, 72px);
-  background: linear-gradient(180deg, var(--bg) 0%, var(--surface-soft) 100%);
-  border-top: 1px solid var(--line);
-  color: var(--muted);
+  background:
+    linear-gradient(180deg, rgba(14, 16, 19, 0.98), rgba(20, 22, 27, 0.98)),
+    linear-gradient(135deg, rgba(139, 31, 45, 0.16), transparent 42%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .site-footer p {
@@ -835,25 +837,25 @@ h3 {
   height: 54px;
   object-fit: cover;
   border-radius: 8px;
-  border: 1px solid rgba(236, 214, 183, 0.95);
-  box-shadow: 0 10px 24px rgba(84, 25, 25, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .footer-logo:hover {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 16px 28px rgba(84, 25, 25, 0.16);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.36);
 }
 
 .footer-name {
   margin: 0;
   font-weight: 800;
-  color: var(--text);
+  color: #ffffff;
 }
 
 .footer-note {
   margin: 2px 0 0;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.66);
   font-size: 0.9rem;
 }
 
@@ -864,7 +866,7 @@ h3 {
 }
 
 .footer-links-title {
-  color: var(--text);
+  color: #ffffff;
   font-size: 0.95rem;
   font-weight: 800;
 }
@@ -881,17 +883,17 @@ h3 {
   gap: 11px;
   min-width: 0;
   padding: 10px 12px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.04);
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
 
 .social-link:hover {
   transform: translateY(-2px);
-  border-color: rgba(216, 161, 50, 0.75);
-  background: var(--surface);
-  box-shadow: 0 12px 24px rgba(84, 25, 25, 0.08);
+  border-color: rgba(240, 198, 104, 0.55);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
 }
 
 .social-icon {
@@ -920,12 +922,12 @@ h3 {
 }
 
 .social-link strong {
-  color: var(--text);
+  color: #ffffff;
   font-size: 0.94rem;
 }
 
 .social-link small {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.62);
   font-size: 0.78rem;
   font-weight: 700;
 }
@@ -934,6 +936,7 @@ h3 {
   justify-self: end;
   max-width: 260px;
   text-align: right;
+  color: rgba(255, 255, 255, 0.62);
 }
 
 @media (max-width: 920px) {
