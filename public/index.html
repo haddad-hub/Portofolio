@@ -11,13 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260703-4">
+    <link rel="stylesheet" href="styles.css?v=20260704-1">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#home" data-profile="name">Portfolio</a>
       <nav class="nav" aria-label="Navigasi utama">
         <a href="#projects">Project</a>
+        <a href="#github">GitHub</a>
         <a href="#services">Layanan</a>
         <a href="#experience">Pengalaman</a>
         <a href="#contact">Kontak</a>
@@ -61,6 +62,58 @@
         <div id="projectsGrid" class="projects-grid"></div>
       </section>
 
+      <section id="github" class="section github-section">
+        <div class="github-copy">
+          <p class="eyebrow">GitHub profile</p>
+          <h2>Lihat cara saya membangun project dari source code.</h2>
+          <p>GitHub saya menjadi tempat dokumentasi kerja: portfolio, eksperimen frontend, dashboard, aplikasi operasional, dan latihan pemrograman yang terus saya rapikan.</p>
+          <div class="github-highlights" aria-label="Ringkasan GitHub">
+            <span>Portfolio source</span>
+            <span>Web app practice</span>
+            <span>Dashboard UI</span>
+          </div>
+          <div class="github-actions">
+            <a class="button primary" href="https://github.com/haddad-hub" target="_blank" rel="noreferrer">Buka GitHub</a>
+            <a class="button secondary" href="https://github.com/haddad-hub/Portofolio" target="_blank" rel="noreferrer">Repo Portfolio</a>
+          </div>
+        </div>
+        <a class="github-card" href="https://github.com/haddad-hub" target="_blank" rel="noreferrer" aria-label="Buka profil GitHub Haddad Hub">
+          <div class="github-card-header">
+            <div class="github-identity">
+              <span class="github-mark" aria-hidden="true">GH</span>
+              <div>
+                <p class="github-label">Developer account</p>
+                <p class="github-username">haddad-hub</p>
+              </div>
+            </div>
+            <span class="github-status">Open source</span>
+          </div>
+          <div class="github-terminal" aria-hidden="true">
+            <span></span>
+            <code>git clone github.com/haddad-hub/Portofolio</code>
+          </div>
+          <div class="github-repos" aria-label="Repository unggulan">
+            <div>
+              <strong>Portofolio</strong>
+              <span>Personal website source</span>
+            </div>
+            <div>
+              <strong>projek-belajar</strong>
+              <span>Frontend app experiments</span>
+            </div>
+          </div>
+          <div class="github-activity" aria-hidden="true">
+            <span style="--h: 34%"></span>
+            <span style="--h: 58%"></span>
+            <span style="--h: 44%"></span>
+            <span style="--h: 78%"></span>
+            <span style="--h: 52%"></span>
+            <span style="--h: 86%"></span>
+            <span style="--h: 66%"></span>
+          </div>
+        </a>
+      </section>
+
       <section id="services" class="section split-section">
         <div class="section-heading">
           <p class="eyebrow">What I do</p>
@@ -98,8 +151,17 @@
             <input name="email" type="email" autocomplete="email" required>
           </label>
           <label>
-            Subjek
-            <input name="subject" type="text" required>
+            Tujuan pesan
+            <span class="select-wrap">
+              <select name="subject" required>
+                <option value="" selected disabled>Pilih tujuan pesan</option>
+                <option value="Diskusi project baru">Diskusi project baru</option>
+                <option value="Kerja sama / freelance">Kerja sama / freelance</option>
+                <option value="Tanya portfolio">Tanya portfolio</option>
+                <option value="Revisi atau update website">Revisi atau update website</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </span>
           </label>
           <label>
             Pesan
@@ -124,6 +186,6 @@
       <p class="footer-copy">&copy; <span id="year"></span> <span data-profile="name">Haddad asriansyah</span>. All rights reserved.</p>
     </footer>
 
-    <script src="app.js?v=20260703-4" defer></script>
+    <script src="app.js?v=20260704-1" defer></script>
   </body>
 </html>

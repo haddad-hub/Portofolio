@@ -11,7 +11,7 @@ const fallbackProfile = {
   "availability": "Open for freelance and full-time work",
   "summary": "Saya membangun aplikasi web operasional seperti dashboard analytics, aplikasi pelanggan, aplikasi kurir, dan tools interaktif berbasis HTML, CSS, JavaScript, Tailwind, Chart.js, serta localStorage.",
   "links": {
-    "github": "#",
+    "github": "https://github.com/haddad-hub",
     "linkedin": "#",
     "instagram": "#",
     "resume": "#"
